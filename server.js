@@ -38,7 +38,7 @@ app.post("/api/notes", function (req, res) {
     // Proposition: We want each new id to be one greater than the last elements id
     // newNote.id = database.length + 1;
     //If there are no notes, you end up breaking because you can't make a new note id.
-    if (database.length === 1) {
+    if (database.length === 0) {
       newNote.id = 1;
     } else {
       const lastElementId = database[database.length - 1].id;
@@ -68,6 +68,7 @@ app.delete("/api/notes/:id", function (req, res) {
     var newDatabase = database.filter((note) => {
       return note.id !== id;
     });
+    newDatabase = JSON.stringify(newDatabase);
     fs.writeFile("db/db.json", newDatabase, function (err) {
       if (err) throw err;
       res.sendStatus(200);
