@@ -30,7 +30,7 @@ This application can be used to write, save, and delete notes. This application 
 
 ### App-screenshots
 
-![Note Taker screenshot]()
+![Note Taker screenshot](public/assets/note-taker.png)
 
 ### Questions
 
