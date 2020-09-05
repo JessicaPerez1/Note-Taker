@@ -1,9 +1,13 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
-
+.container-fluid {
+  border-top: solid gray 1px;
+  background-color: #c0c2c2;
+}
 .save-note {
   display: none;
 }
@@ -14,9 +18,17 @@ html, body {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.navbar {
+  background-color: white;
+}
+input,
+textarea {
+  background-color: #c0c2c2;
+}
 
-.note-textarea, .note-title {
-  color: #000000;
+.note-textarea,
+.note-title {
+  color: white;
   width: 100%;
   outline: none;
   border: none;
@@ -34,7 +46,8 @@ html, body {
   font-size: 3rem;
 }
 
-.note-title:read-only, .note-textarea:read-only {
+.note-title:read-only,
+.note-textarea:read-only {
   color: #757575;
 }
 
@@ -44,7 +57,11 @@ html, body {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-
+.list-container,
+.card,
+.kist-group {
+  background-color: mintcream;
+}
 .list-container {
   padding-left: 0;
 }
