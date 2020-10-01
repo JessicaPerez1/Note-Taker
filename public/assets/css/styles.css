@@ -6,12 +6,11 @@ body {
 }
 .container-fluid {
   border-top: solid gray 1px;
-  background-color: #c0c2c2;
+  height: 60%;
 }
 .save-note {
   display: none;
 }
-
 .icons i {
   margin-left: 15px;
   margin-right: 15px;
@@ -21,14 +20,9 @@ body {
 .navbar {
   background-color: white;
 }
-input,
-textarea {
-  background-color: #c0c2c2;
-}
-
 .note-textarea,
 .note-title {
-  color: white;
+  color: darkgray;
   width: 100%;
   outline: none;
   border: none;
@@ -36,7 +30,6 @@ textarea {
 
 .note-textarea {
   resize: none;
-  height: calc(100% - 63px);
   padding-top: 15px;
 }
 
@@ -46,7 +39,9 @@ textarea {
   font-size: 3rem;
 }
 
-.note-title:read-only,
+.note-title {
+  color: #88cb90;
+}
 .note-textarea:read-only {
   color: #757575;
 }
@@ -57,15 +52,13 @@ textarea {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.list-container,
-.card,
-.kist-group {
-  background-color: mintcream;
-}
+
 .list-container {
   padding-left: 0;
 }
-
+.list-group {
+  color: #f99d95;
+}
 .list-container .list-group,
 .list-container .list-group-item:first-child,
 .list-container .card {
